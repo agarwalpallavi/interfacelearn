@@ -16,7 +16,9 @@
 <!--                                           -->
 <!-- Any title is fine                         -->
 <!--                                           -->
-<title>Web Application Starter Project</title>
+
+        <title>Learning</title>
+    
 
 <!--                                           -->
 <!-- This script loads your compiled module.   -->
@@ -47,34 +49,32 @@
 	</noscript>
 
 	<h1>Web Application Starter Project</h1>
-
+	<form action="/greet" method="get">
 	<table align="center">
 		<tr>
 			<td style="font-weight: bold;">Please enter your name:</td>
-			<td id="nameFieldContainer"></td>
+			<td><input name="nameField" type="text" id="nameField"/></td>
 		</tr>
 		<tr>
 			<td style="font-weight: bold;">Please enter your age:</td>
-			<td id="ageFieldContainer"></td>
-		</tr>
-		<tr>
-			<td style="font-weight: bold;">Please enter your ethnicity:</td>
-			<td id="ethnicityFieldContainer"></td>
+			<td><input name="ageField" type="text" id="ageField"/></td>
 		</tr>
 		<tr>
 			<td style="font-weight: bold;">Please enter your gender:</td>
-			<td id="genderFieldContainer"></td>
+			<td><input name="genderField" type="text" id="genderField"/></td>
+		</tr>
+		<tr>
+			<td style="font-weight: bold;">Please enter your ethnicity:</td>
+			<td><input name="ethnicityField" type="text" id="ethnicityField"/></td>
 		</tr>
 		<tr>
 			<td style="font-weight: bold;">Please enter your email:</td>
-			<td id="emailFieldContainer"></td>
+			<td><input name="emailField" type="text" id="emailField"/></td>
 		</tr>
-		<tr>
-			<td id="sendButtonContainer"></td>
-		</tr>
-		<tr>
-			<td colspan="2" style="color: red;" id="errorLabelContainer"></td>
-		</tr>
+		<tr><td>
+		<input type="submit" value="Submit"/></td></tr>
+	
 	</table>
+	</form>
 </body>
 </html>

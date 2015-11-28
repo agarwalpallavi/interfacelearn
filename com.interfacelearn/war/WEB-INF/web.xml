@@ -12,9 +12,19 @@
 
 	<servlet-mapping>
 		<servlet-name>greetServlet</servlet-name>
-		<url-pattern>/com_interfacelearn/greet</url-pattern>
+		<url-pattern>/greet</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>selectionServlet</servlet-name>
+		<servlet-class>com.interfacelearn.server.SelectionImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>selectionServlet</servlet-name>
+		<url-pattern>/selection</url-pattern>
+	</servlet-mapping>
+	
 	<!-- Default page to serve -->
 	<welcome-file-list>
 		<welcome-file>Com_interfacelearn.html</welcome-file>

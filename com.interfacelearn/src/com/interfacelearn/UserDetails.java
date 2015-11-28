@@ -8,9 +8,13 @@ public class UserDetails implements Serializable{
 	public String age;
 	public String gender;
 	public String ethnicity;
-	public int id;
-	
-	public UserDetails(String name, String email, String age, String gender, String ethnicity, int id) {
+	public double id;
+	public boolean selection;
+	public int score1;
+	public int score2;
+	public int score3;
+	public UserDetails(String name, String email, String age, String gender, String ethnicity, double id,
+			boolean selection, int score1, int score2, int score3) {
 		super();
 		this.name = name;
 		this.email = email;
@@ -18,6 +22,10 @@ public class UserDetails implements Serializable{
 		this.gender = gender;
 		this.ethnicity = ethnicity;
 		this.id = id;
+		this.selection = selection;
+		this.score1 = score1;
+		this.score2 = score2;
+		this.score3 = score3;
 	}
 	public String getName() {
 		return name;
@@ -49,12 +57,35 @@ public class UserDetails implements Serializable{
 	public void setEthnicity(String ethnicity) {
 		this.ethnicity = ethnicity;
 	}
-	public int getId() {
+	public double getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	
+	public boolean isSelection() {
+		return selection;
+	}
+	public void setSelection(boolean selection) {
+		this.selection = selection;
+	}
+	public int getScore1() {
+		return score1;
+	}
+	public void setScore1(int score1) {
+		this.score1 = score1;
+	}
+	public int getScore2() {
+		return score2;
+	}
+	public void setScore2(int score2) {
+		this.score2 = score2;
+	}
+	public int getScore3() {
+		return score3;
+	}
+	public void setScore3(int score3) {
+		this.score3 = score3;
+	}
+		
 }
