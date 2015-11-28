@@ -1,6 +1,8 @@
 package com.interfacelearn.client;
 
+import com.interfacelearn.UserDetails;
 import com.interfacelearn.shared.FieldVerifier;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -39,7 +41,10 @@ public class Com_interfacelearn implements EntryPoint {
 	public void onModuleLoad() {
 		final Button sendButton = new Button("Send");
 		final TextBox nameField = new TextBox();
-		nameField.setText("GWT User");
+		final TextBox ageField = new TextBox();
+		final TextBox genderField = new TextBox();
+		final TextBox ethnicityField = new TextBox();
+		final TextBox emailField = new TextBox();
 		final Label errorLabel = new Label();
 
 		// We can add style names to widgets
@@ -48,6 +53,10 @@ public class Com_interfacelearn implements EntryPoint {
 		// Add the nameField and sendButton to the RootPanel
 		// Use RootPanel.get() to get the entire body element
 		RootPanel.get("nameFieldContainer").add(nameField);
+		RootPanel.get("ageFieldContainer").add(ageField);
+		RootPanel.get("genderFieldContainer").add(genderField);
+		RootPanel.get("ethnicityFieldContainer").add(ethnicityField);
+		RootPanel.get("emailFieldContainer").add(emailField);
 		RootPanel.get("sendButtonContainer").add(sendButton);
 		RootPanel.get("errorLabelContainer").add(errorLabel);
 
@@ -107,12 +116,16 @@ public class Com_interfacelearn implements EntryPoint {
 			private void sendNameToServer() {
 				// First, we validate the input.
 				errorLabel.setText("");
-				String textToServer = nameField.getText();
+				String textToServer = ageField.getText();
 				if (!FieldVerifier.isValidName(textToServer)) {
 					errorLabel.setText("Please enter at least four characters");
 					return;
 				}
-
+//				UserDetails user = new UserDetails(nameField.getText(), emailField.getText(), ageField.getText(),genderField.getText(), ethnicityField.getText(), 1);
+//				DatastoreService datastore = DatastoreServiceFactory
+//		                .getDatastoreService();
+//		        datastore.put(user);
+				
 				// Then, we send the input to the server.
 				sendButton.setEnabled(false);
 				textToServerLabel.setText(textToServer);
@@ -130,9 +143,11 @@ public class Com_interfacelearn implements EntryPoint {
 					public void onSuccess(String result) {
 						dialogBox.setText("Remote Procedure Call");
 						serverResponseLabel.removeStyleName("serverResponseLabelError");
+						
 						serverResponseLabel.setHTML(result);
 						dialogBox.center();
 						closeButton.setFocus(true);
+				        
 					}
 				});
 			}

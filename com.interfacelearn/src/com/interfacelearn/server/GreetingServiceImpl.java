@@ -2,6 +2,12 @@ package com.interfacelearn.server;
 
 import com.interfacelearn.client.GreetingService;
 import com.interfacelearn.shared.FieldVerifier;
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.EntityNotFoundException;
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
@@ -17,7 +23,28 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements Greetin
 			// the client.
 			throw new IllegalArgumentException("Name must be at least 4 characters long");
 		}
-
+//		Entity entity = new Entity("Todo", "Todo1");
+//        // Alternatively use
+//        // Key todoKey = KeyFactory.createKey("Todo", "Todo1");
+//        // Entity entity = new Entity(todoKey);
+//        entity.setProperty("summary", "This is my summary");
+//        DatastoreService datastore = DatastoreServiceFactory
+//                .getDatastoreService();
+//        datastore.put(entity);
+        DatastoreService datastore2 = DatastoreServiceFactory
+                .getDatastoreService();
+        Key todoKey = KeyFactory.createKey("Todo", "Todo1");
+        Entity entity2;
+        String summary = null;
+            try {
+				entity2 = datastore2.get(todoKey);
+				summary = (String) entity2.getProperty("summary");
+			} catch (EntityNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            
+        
 		String serverInfo = getServletContext().getServerInfo();
 		String userAgent = getThreadLocalRequest().getHeader("User-Agent");
 
@@ -25,8 +52,9 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements Greetin
 		input = escapeHtml(input);
 		userAgent = escapeHtml(userAgent);
 
-		return "Hello, " + input + "!<br><br>I am running " + serverInfo + ".<br><br>It looks like you are using:<br>"
+		return "Hello, " + summary + "!<br><br>I am running " + serverInfo + ".<br><br>It looks like you are using:<br>"
 				+ userAgent;
+
 	}
 
 	/**
