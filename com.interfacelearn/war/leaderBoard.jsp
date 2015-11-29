@@ -23,95 +23,63 @@
     <br/>
 		<input type="radio" name="q2" value="a"> a. Counting the maximum memory needed by the algorithm
   		<br/>
-  		<input type="radio" name="q2" value="b"> b.    Counting the minimum memory needed by the algorithm
+  		<input type="radio" name="q2" value="b"> b. Counting the minimum memory needed by the algorithm
   		<br/>
-  		<input type="radio" name="q2" value="c"> c. Both A and B
+  		<input type="radio" name="q2" value="c"> c. Counting the average memory needed by the algorithm
   		<br/>
-  		<input type="radio" name="q2" value="d"> d. None of the above
+  		<input type="radio" name="q2" value="d"> d. Counting the maximum disk space needed by the algorithm 
   		<br/>
   		<br/>
   		<br/>
 
-  	3. When determining the efficiency of algorithm the time factor is measured by :
+  	3. Which of the following sorting algorithm is of divide-and-conquer type :
     <br/>
-		<input type="radio" name="q3" value="a"> a. Counting microseconds
+		<input type="radio" name="q3" value="a"> a. Bubble sort
   		<br/>
-  		<input type="radio" name="q3" value="b"> b. Counting the number of key operations
+  		<input type="radio" name="q3" value="b"> b. Insertion sort
   		<br/>
-  		<input type="radio" name="q3" value="c"> c. Counting the number of statements
+  		<input type="radio" name="q3" value="c"> c. Quick sort
   		<br/>
-  		<input type="radio" name="q3" value="d"> d. Counting the kilobytes of algorithm
+  		<input type="radio" name="q3" value="d"> d. All of the above
   		<br/>
   		<br/>
   		<br/>
 
-
-
-
-c.    Counting the average memory needed by the algorithm
-d.    Counting the maximum disk space needed by the algorithm
-
-3.  Which of the following sorting algorithm is of divide-and-conquer type?
-a. Bubble sort
-b. Insertion sort
-c. Quick sort
-d. All of above
-
-4. The time complexity of searching an element in binary search tree is
-a.    O(n)
-b.    O(log )
-c.    O(n*n)
-d.    O(n*log n)
-
-5. Which data structure allows deleting data elements from front and inserting at rear in constant time? 
-a. Stacks 
-b. Queues 
-d. Binary search tree
-
-6.    The operation of processing each element in the list is known as
-a.    Sorting
-b.    Merging
-c.    Inserting
-d.    Traversal
-
-
-
-
-  	4. The number of binary trees with 3 nodes which when traversed in postorder gives the sequence as A,B, C :
+  	4. The time complexity of searching an element in binary search tree is :
     <br/>
-		<input type="radio" name="q4" value="a"> a. 3
+		<input type="radio" name="q4" value="a"> a. O(n)
   		<br/>
-  		<input type="radio" name="q4" value="b"> b. 9
+  		<input type="radio" name="q4" value="b"> b. O(logn)
   		<br/>
-  		<input type="radio" name="q4" value="c"> c. 7
+  		<input type="radio" name="q4" value="c"> c. O(n*n)
   		<br/>
-  		<input type="radio" name="q4" value="d"> d. 5
+  		<input type="radio" name="q4" value="d"> d. O(n*logn)
   		<br/>
   		<br/>
   		<br/>
   		
-  	5. A binary search tree whose left subtree and right subtree differ in height by at most 1 unit is called:
+  	5. Which data structure allows deleting data elements from front and inserting at rear in constant time :
     <br/>
-		<input type="radio" name="q5" value="a"> a. Lemma tree
+		<input type="radio" name="q5" value="a"> a. Stacks
   		<br/>
-  		<input type="radio" name="q5" value="b"> b. Red-Black tree
+  		<input type="radio" name="q5" value="b"> b. Queues
   		<br/>
-  		<input type="radio" name="q5" value="c"> c. AVL tree
+  		<input type="radio" name="q5" value="c"> c. Binary Search Tree
   		<br/>
-  		<input type="radio" name="q5" value="d"> d. Does not have a name
+  		<input type="radio" name="q5" value="d"> d. None of these
   		<br/>
   		<br/>
   		<br/>
 
-  	6. To represent hierarchical relationship between elements, which data structure is suitable :
+  	6. The operation of processing each element in the list is known as :
     <br/>
-		<input type="radio" name="q6" value="a"> a. Deque
+		<input type="radio" name="q6" value="a"> a. Sorting
   		<br/>
-  		<input type="radio" name="q6" value="b"> b. Priority Queue
+  		<input type="radio" name="q6" value="b"> b. Merging
   		<br/>
-  		<input type="radio" name="q6" value="c"> c. Tree
+  		<input type="radio" name="q6" value="c"> c. Inserting
   		<br/>
-  		<input type="radio" name="q6" value="d"> d. All of the above
+  		<input type="radio" name="q6" value="d"> d. Traversal
   		<br/>
   		<br/>
   		<br/>
