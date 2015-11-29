@@ -5,15 +5,16 @@
     </head>
     <body>
     <form action="/starttest2" method="get">
-    1. Finding the location of the element with a given value is:
+
+    1. The memory address of the first element of an array is called :
     <br/>
-		<input type="radio" name="q1" value="a"> a. Traversal
+		<input type="radio" name="q1" value="a"> a. Floor address
   		<br/>
-  		<input type="radio" name="q1" value="b"> b. Search
+  		<input type="radio" name="q1" value="b"> b. Foundation address
   		<br/>
-  		<input type="radio" name="q1" value="c"> c. Sort
+  		<input type="radio" name="q1" value="c"> c. First address
   		<br/>
-  		<input type="radio" name="q1" value="d"> d. None of these
+  		<input type="radio" name="q1" value="d"> d. Base address
   		<br/>
   		<br/>
   		<br/>
@@ -57,6 +58,7 @@
   		<br/>
   		<br/>
   		<br/>
+
   		
   	5. Which data structure allows deleting data elements from front and inserting at rear in constant time :
     <br/>
@@ -84,57 +86,19 @@
   		<br/>
   		<br/>
 
-  	7. A complete binary tree that has n leaf nodes, has ___ nodes of degree 2 :
+  	7. When new data are to be inserted into a data structure, but there is no available space; this situation is usually called :
     <br/>
-		<input type="radio" name="q7" value="a"> a. n - 1
+		<input type="radio" name="q7" value="a"> a. Underflow
   		<br/>
-  		<input type="radio" name="q7" value="b"> b. n/2
+  		<input type="radio" name="q7" value="b"> b. Overflow
   		<br/>
-  		<input type="radio" name="q7" value="c"> c. log(n)
+  		<input type="radio" name="q7" value="c"> c. Housefull
   		<br/>
-  		<input type="radio" name="q7" value="d"> d. n*n
+  		<input type="radio" name="q7" value="d"> d. Saturated
   		<br/>
   		<br/>
   		<br/>
 
-  	8. The time complexity of Binary search algorithm is :
-    <br/>
-		<input type="radio" name="q8" value="a"> a. O(n)
-  		<br/>
-  		<input type="radio" name="q8" value="b"> b. O(logn)
-  		<br/>
-  		<input type="radio" name="q8" value="c"> c. O(n*n)
-  		<br/>
-  		<input type="radio" name="q8" value="d"> d. O(nlogn)
-  		<br/>
-  		<br/>
-  		<br/>
-
-  	9. The time complexity of Binary search algorithm is :
-    <br/>
-		<input type="radio" name="q9" value="a"> a. O(n)
-  		<br/>
-  		<input type="radio" name="q9" value="b"> b. O(logn)
-  		<br/>
-  		<input type="radio" name="q9" value="c"> c. O(n*n)
-  		<br/>
-  		<input type="radio" name="q9" value="d"> d. O(nlogn)
-  		<br/>
-  		<br/>
-  		<br/>
-
-  	10. The time complexity of Binary search algorithm is :
-    <br/>
-		<input type="radio" name="q10" value="a"> a. O(n)
-  		<br/>
-  		<input type="radio" name="q10" value="b"> b. O(logn)
-  		<br/>
-  		<input type="radio" name="q10" value="c"> c. O(n*n)
-  		<br/>
-  		<input type="radio" name="q10" value="d"> d. O(nlogn)
-  		<br/>
-  		<br/>
-  		<br/>
 
   <input type="hidden" name="id" value=${id}>
   <input type="submit" value="Submit"/>

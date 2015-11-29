@@ -5,19 +5,19 @@
     </head>
     <body>
     <form action="/selection" method="get">
-    1. The time complexity of Binary search algorithm is :
+    
+    1. Which of the following is not the required condition for binary search algorithm :
     <br/>
-		<input type="radio" name="q1" value="a"> a. O(n)
+		<input type="radio" name="q1" value="a"> a. The list must be sorted
   		<br/>
-  		<input type="radio" name="q1" value="b"> b. O(logn)
+  		<input type="radio" name="q1" value="b"> b. There should be the direct access to the middle element in any sublist
   		<br/>
-  		<input type="radio" name="q1" value="c"> c. O(n*n)
+  		<input type="radio" name="q1" value="c"> c. There must be mechanism to delete and/or insert elements in list
   		<br/>
-  		<input type="radio" name="q1" value="d"> d. O(nlogn)
+  		<input type="radio" name="q1" value="d"> d. None of the above
   		<br/>
   		<br/>
   		<br/>
-
 
   	2. Which of the following points are true as the difference between classes and structures :
     <br/>
@@ -97,41 +97,41 @@
   		<br/>
   		<br/>
 
-  	8. The time complexity of Binary search algorithm is :
+  	8. Linked lists are best suited for :
     <br/>
-		<input type="radio" name="q8" value="a"> a. O(n)
+		<input type="radio" name="q8" value="a"> a. For relatively permanent collections of data
   		<br/>
-  		<input type="radio" name="q8" value="b"> b. O(logn)
+  		<input type="radio" name="q8" value="b"> b. For the size of the structure and the data in the structure are constantly changing
   		<br/>
-  		<input type="radio" name="q8" value="c"> c. O(n*n)
+  		<input type="radio" name="q8" value="c"> c. For both of teh above situations
   		<br/>
-  		<input type="radio" name="q8" value="d"> d. O(nlogn)
+  		<input type="radio" name="q8" value="d"> d. For none of the above situations
   		<br/>
   		<br/>
   		<br/>
 
-  	9. The time complexity of Binary search algorithm is :
+  	9. What is the meaning of FIFO?
     <br/>
-		<input type="radio" name="q9" value="a"> a. O(n)
+		<input type="radio" name="q9" value="a"> a. First In Fast Out
   		<br/>
-  		<input type="radio" name="q9" value="b"> b. O(logn)
+  		<input type="radio" name="q9" value="b"> b. Fast In First Out
   		<br/>
-  		<input type="radio" name="q9" value="c"> c. O(n*n)
+  		<input type="radio" name="q9" value="c"> c. First In First Out
   		<br/>
-  		<input type="radio" name="q9" value="d"> d. O(nlogn)
+  		<input type="radio" name="q9" value="d"> d. None of the above
   		<br/>
   		<br/>
   		<br/>
 
-  	10. The time complexity of Binary search algorithm is :
+  	10. The memory address of fifth element of an array can be calculated by the formula :
     <br/>
-		<input type="radio" name="q10" value="a"> a. O(n)
+		<input type="radio" name="q10" value="a"> a. a. LOC(Array[5]=Base(Array)+w(5-lower bound), where w is the number of words per memory cell for the array
   		<br/>
-  		<input type="radio" name="q10" value="b"> b. O(logn)
+  		<input type="radio" name="q10" value="b"> b. LOC(Array[5])=Base(Array[5])+(5-lower bound), where w is the number of words per memory cell for the array
   		<br/>
-  		<input type="radio" name="q10" value="c"> c. O(n*n)
+  		<input type="radio" name="q10" value="c"> c. LOC(Array[5])=Base(Array[4])+(5-Upper bound), where w is the number of words per memory cell for the array
   		<br/>
-  		<input type="radio" name="q10" value="d"> d. O(nlogn)
+  		<input type="radio" name="q10" value="d"> d. None of above
   		<br/>
   		<br/>
   		<br/>
