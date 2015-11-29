@@ -25,7 +25,7 @@ public class StartTest2 extends RemoteServiceServlet {
         Entity entity;
 		try {
 			entity = datastore.get(k);
-			 entity.setProperty("selection", req.getParameter("selection"));
+			 //entity.setProperty("selection", req.getParameter("selection"));
 			 
 		        datastore.put(entity);
 		} catch (EntityNotFoundException e) {
@@ -35,7 +35,7 @@ public class StartTest2 extends RemoteServiceServlet {
 		req.setAttribute("id", id); 
 	
         try {
-			req.getRequestDispatcher("test2.jsp").forward(req, resp);
+			req.getRequestDispatcher("test3.jsp").forward(req, resp);
 		} catch (ServletException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
