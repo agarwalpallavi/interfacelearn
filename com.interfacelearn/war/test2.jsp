@@ -107,6 +107,9 @@
 	</form>
     </td><td>
       Your current score: ${score}
+      ${table}
+      <br/><br/>
+
     <table border=2 cellpadding=2px>
     <tr>
     <th>Score</th>

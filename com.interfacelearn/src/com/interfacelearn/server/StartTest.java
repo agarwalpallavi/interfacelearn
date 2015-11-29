@@ -38,11 +38,12 @@ public class StartTest extends RemoteServiceServlet {
 		        {
 		        	//fetch top 10
 		        	Query query = new Query("id");
-		        	query.addSort("age", SortDirection.DESCENDING);
+		        	query.addSort("total1", SortDirection.DESCENDING);
 		        	 List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(10));
 		        	 
 		        	 System.out.println(greetings);
 		        	 int count = 1;
+		        	 String message ="<table border=2 cellpadding=2px><tr><th>Score</th><th>Name</th></tr>";
 		        	 if (!greetings.isEmpty()) {
 		        	   
 		        	        for (Entity greeting : greetings) {
@@ -50,19 +51,23 @@ public class StartTest extends RemoteServiceServlet {
 		        	        	{
 		        	        		break;
 		        	        	}
-		        	        	req.setAttribute("name"+count, greeting.getProperty("name"));
-		        	        	req.setAttribute("score"+count, greeting.getProperty("age"));
+		        	        	message+="<tr><td>"+greeting.getProperty("name")+"</td><td>"+greeting.getProperty("total1")+"</td></tr>";
+//		        	        	req.setAttribute("name"+count, greeting.getProperty("name"));
+//		        	        	req.setAttribute("score"+count, greeting.getProperty("total1"));
 		        	        	count++;
 		        	        }
 		        	    }
+		        	 message+="</table>";
+		        	 req.setAttribute("table", message);
 		        	 req.setAttribute("count", count-1);
+		        	 req.setAttribute("id", id); 
+		     		req.setAttribute("selection", sel);
 		        }
 		} catch (EntityNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		req.setAttribute("id", id); 
-		req.setAttribute("selection", sel);
+		
         try {
 			req.getRequestDispatcher("test2.jsp").forward(req, resp);
 		} catch (ServletException e) {

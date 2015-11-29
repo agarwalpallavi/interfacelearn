@@ -1,6 +1,7 @@
 package com.interfacelearn.server;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,7 @@ import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.EntityNotFoundException;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
+
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
@@ -53,15 +55,17 @@ public class GreetingServiceImpl extends RemoteServiceServlet{
         entity.setProperty("gender", req.getParameter("gender"));
         entity.setProperty("ethnicity", req.getParameter("nationality"));
         entity.setProperty("email", req.getParameter("emailField"));
-        entity.setProperty("score1", null);
-        entity.setProperty("score2", null);
-        entity.setProperty("score3", null);
-        entity.setProperty("total", null);
+        entity.setProperty("score1", 0);
+        entity.setProperty("score2", 0);
+        entity.setProperty("score3", 0);
+        entity.setProperty("total1", 0);
+        entity.setProperty("total2", 0);
+        entity.setProperty("total3", 0);
+        entity.setProperty("total", 0);
         entity.setProperty("selection", null);
         datastore.put(entity);
         
-        System.out.println(entity.toString());
-        
+        req.setAttribute("time", new Date().getTime());
         req.setAttribute("message", num.toString()); // This will be available as ${message}
         try {
 			req.getRequestDispatcher("test1.jsp").forward(req, resp);

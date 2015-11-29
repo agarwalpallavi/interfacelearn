@@ -103,7 +103,7 @@
   		<br/>
   		<input type="radio" name="q8" value="b"> b. For the size of the structure and the data in the structure are constantly changing
   		<br/>
-  		<input type="radio" name="q8" value="c"> c. For both of teh above situations
+  		<input type="radio" name="q8" value="c"> c. For both of the above situations
   		<br/>
   		<input type="radio" name="q8" value="d"> d. For none of the above situations
   		<br/>
@@ -125,7 +125,7 @@
 
   	10. The memory address of fifth element of an array can be calculated by the formula :
     <br/>
-		<input type="radio" name="q10" value="a"> a. a. LOC(Array[5]=Base(Array)+w(5-lower bound), where w is the number of words per memory cell for the array
+		<input type="radio" name="q10" value="a"> a. LOC(Array[5]=Base(Array)+w(5-lower bound), where w is the number of words per memory cell for the array
   		<br/>
   		<input type="radio" name="q10" value="b"> b. LOC(Array[5])=Base(Array[5])+(5-lower bound), where w is the number of words per memory cell for the array
   		<br/>
@@ -137,6 +137,7 @@
   		<br/>
 
   <input type="hidden" name="id" value=${message}>
+  <input type="hidden" name="time" value=${time}>
   <input type="submit" value="Submit"/>
 	</form>
      
