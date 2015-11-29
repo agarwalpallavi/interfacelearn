@@ -52,6 +52,10 @@ public class GreetingServiceImpl extends RemoteServiceServlet{
         entity.setProperty("gender", req.getParameter("genderField"));
         entity.setProperty("ethnicity", req.getParameter("ethnicityField"));
         entity.setProperty("email", req.getParameter("emailField"));
+        entity.setProperty("score1", null);
+        entity.setProperty("score2", null);
+        entity.setProperty("score3", null);
+        entity.setProperty("selection", null);
         datastore.put(entity);
         
         System.out.println(entity.toString());

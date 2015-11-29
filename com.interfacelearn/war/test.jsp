@@ -8,7 +8,7 @@
 		<input type="radio" name="sex" value="male" checked> Male
   <br>
   <input type="radio" name="sex" value="female"> Female<br/>
-  <input type="hidden" name="id" value=${message}/>
+  <input type="hidden" name="id" value=${message}>
   <input type="submit" value="Submit"/>
 	</form>
      
