@@ -23,7 +23,7 @@
     <br/>
 		<input type="radio" name="q2" value="a"> a. Structures do not have methods while classes do.
   		<br/>
-  		<input type="radio" name="q2" value="b"> b. Structureâ€™s variables are public while classâ€™ member variables are private by default.
+  		<input type="radio" name="q2" value="b"> b. Structures variables are public while classes€™ member variables are private by default.
   		<br/>
   		<input type="radio" name="q2" value="c"> c. Both A and B
   		<br/>
@@ -55,7 +55,9 @@
   		<br/>
   		<input type="radio" name="q4" value="d"> d. 5
   		<br/>
-
+  		<br/>
+  		<br/>
+  		
   	5. A binary search tree whose left subtree and right subtree differ in height by at most 1 unit is called:
     <br/>
 		<input type="radio" name="q5" value="a"> a. Lemma tree
@@ -65,6 +67,8 @@
   		<input type="radio" name="q5" value="c"> c. AVL tree
   		<br/>
   		<input type="radio" name="q5" value="d"> d. Does not have a name
+  		<br/>
+  		<br/>
   		<br/>
 
   	6. To represent hierarchical relationship between elements, which data structure is suitable :
@@ -77,6 +81,8 @@
   		<br/>
   		<input type="radio" name="q6" value="d"> d. All of the above
   		<br/>
+  		<br/>
+  		<br/>
 
   	7. A complete binary tree that has n leaf nodes, has ___ nodes of degree 2 :
     <br/>
@@ -87,6 +93,8 @@
   		<input type="radio" name="q7" value="c"> c. log(n)
   		<br/>
   		<input type="radio" name="q7" value="d"> d. n*n
+  		<br/>
+  		<br/>
   		<br/>
 
   	8. The time complexity of Binary search algorithm is :
@@ -99,6 +107,8 @@
   		<br/>
   		<input type="radio" name="q8" value="d"> d. O(nlogn)
   		<br/>
+  		<br/>
+  		<br/>
 
   	9. The time complexity of Binary search algorithm is :
     <br/>
@@ -110,6 +120,8 @@
   		<br/>
   		<input type="radio" name="q9" value="d"> d. O(nlogn)
   		<br/>
+  		<br/>
+  		<br/>
 
   	10. The time complexity of Binary search algorithm is :
     <br/>
@@ -120,6 +132,8 @@
   		<input type="radio" name="q10" value="c"> c. O(n*n)
   		<br/>
   		<input type="radio" name="q10" value="d"> d. O(nlogn)
+  		<br/>
+  		<br/>
   		<br/>
 
   <input type="hidden" name="id" value=${message}>
