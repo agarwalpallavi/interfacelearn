@@ -4,7 +4,7 @@
         <title>Learning</title>
     </head>
     <body>
-    <form action="/selection" method="get">
+    <form action="/starttest3" method="get">
    
     1. Two main measures for the efficiency of an algorithm are :
     <br/>
@@ -95,7 +95,7 @@
   		<br/>
   		<br/>
 
-  <input type="hidden" name="id" value=${message}>
+  <input type="hidden" name="id" value=${id}>
   <input type="submit" value="Submit"/>
 	</form>
      

@@ -39,7 +39,7 @@ public class StartTest extends RemoteServiceServlet {
 		        	//fetch top 10
 		        	Query query = new Query("id");
 		        	query.addSort("age", SortDirection.DESCENDING);
-		        	 List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(50));
+		        	 List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(10));
 		        	 
 		        	 System.out.println(greetings);
 		        	 int count = 1;

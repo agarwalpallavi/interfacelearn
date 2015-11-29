@@ -44,7 +44,15 @@
 		<servlet-name>startTestServlet2</servlet-name>
 		<url-pattern>/starttest2</url-pattern>
 	</servlet-mapping>
-	
+	<servlet>
+		<servlet-name>startTestServlet3</servlet-name>
+		<servlet-class>com.interfacelearn.server.StartTest3</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>startTestServlet3</servlet-name>
+		<url-pattern>/starttest3</url-pattern>
+	</servlet-mapping>
 	<!-- Default page to serve -->
 	<welcome-file-list>
 		<welcome-file>Com_interfacelearn.html</welcome-file>
