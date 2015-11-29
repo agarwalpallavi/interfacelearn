@@ -4,7 +4,7 @@
         <title>Learning</title>
     </head>
     <body>
-    <form action="/selection" method="get">
+    <form action="/starttest2" method="get">
     1. Finding the location of the element with a given value is:
     <br/>
 		<input type="radio" name="q1" value="a"> a. Traversal
@@ -136,7 +136,7 @@
   		<br/>
   		<br/>
 
-  <input type="hidden" name="id" value=${message}>
+  <input type="hidden" name="id" value=${id}>
   <input type="submit" value="Submit"/>
 	</form>
      

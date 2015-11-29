@@ -23,7 +23,7 @@
     <br/>
 		<input type="radio" name="q2" value="a"> a. Structures do not have methods while classes do.
   		<br/>
-  		<input type="radio" name="q2" value="b"> b. Structures variables are public while classes€™ member variables are private by default.
+  		<input type="radio" name="q2" value="b"> b. Structures variables are public while classes member variables are private by default.
   		<br/>
   		<input type="radio" name="q2" value="c"> c. Both A and B
   		<br/>

@@ -62,7 +62,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet{
         
         req.setAttribute("message", num.toString()); // This will be available as ${message}
         try {
-			req.getRequestDispatcher("test.jsp").forward(req, resp);
+			req.getRequestDispatcher("test1.jsp").forward(req, resp);
 		} catch (ServletException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

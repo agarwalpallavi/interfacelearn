@@ -25,6 +25,26 @@
 		<url-pattern>/selection</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>startTestServlet</servlet-name>
+		<servlet-class>com.interfacelearn.server.StartTest</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>startTestServlet</servlet-name>
+		<url-pattern>/starttest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>startTestServlet2</servlet-name>
+		<servlet-class>com.interfacelearn.server.StartTest2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>startTestServlet2</servlet-name>
+		<url-pattern>/starttest2</url-pattern>
+	</servlet-mapping>
+	
 	<!-- Default page to serve -->
 	<welcome-file-list>
 		<welcome-file>Com_interfacelearn.html</welcome-file>

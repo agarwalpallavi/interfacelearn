@@ -14,19 +14,10 @@ import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
-public class SelectionImpl extends RemoteServiceServlet {
+public class StartTest extends RemoteServiceServlet {
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-		String answers[] = {"b","b","b","d","c","c","a","a","a","a"};
-		int score = 0;
-		for(Integer i=1; i<11;i++) 
-		{
-			if(req.getParameter("q"+i.toString()).equals(answers[i-1]))
-			{
-				score++;
-			}
-		}
-		System.out.println("Score is:"+score);
+		
 		DatastoreService datastore = DatastoreServiceFactory
                 .getDatastoreService();
 		String id = req.getParameter("id");
@@ -34,18 +25,17 @@ public class SelectionImpl extends RemoteServiceServlet {
         Entity entity;
 		try {
 			entity = datastore.get(k);
-			 entity.setProperty("score1", score);
+			 entity.setProperty("selection", req.getParameter("selection"));
 			 
-		        
 		        datastore.put(entity);
 		} catch (EntityNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		req.setAttribute("id", id); 
-	
+		req.setAttribute("selection", req.getParameter("selection"));
         try {
-			req.getRequestDispatcher("selectionscreen.jsp").forward(req, resp);
+			req.getRequestDispatcher("test2.jsp").forward(req, resp);
 		} catch (ServletException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
