@@ -62,6 +62,7 @@ public class GreetingServiceImpl extends RemoteServiceServlet{
         entity.setProperty("total2", 0);
         entity.setProperty("total3", 0);
         entity.setProperty("total", 0);
+        entity.setProperty("total12", 0);
         entity.setProperty("selection", null);
         datastore.put(entity);
         

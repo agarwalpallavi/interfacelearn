@@ -6,8 +6,11 @@
     <body>
     <table border=0 cellpadding=10px>
     <tr><td>
-    <form action="/starttest2" method="get">
-
+    <form action="/starttest" method="get">
+    ${left}</form></td><td>${right}</td> </tr></table>
+    </body>
+</html>
+<!--
     1. The memory address of the first element of an array is called :
     <br/>
 		<input type="radio" name="q1" value="a"> a. Floor address
@@ -156,7 +159,6 @@
     <td>${score10}</td>
     <td>${name10}</td>
     </tr>
-    </table>
-    </td> </tr></table>
-    </body>
-</html>
+    </table>-->
+
+    

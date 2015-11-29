@@ -51,10 +51,10 @@ public class SelectionImpl extends RemoteServiceServlet {
 			 entity.setProperty("score1", score);
 			 entity.setProperty("total1", total);
 			 datastore.put(entity);
-			 Query query = new Query("id").addFilter("selection", Query.FilterOperator.EQUAL, "leaderboard");
+			// Query query = new Query("id").addFilter("selection", Query.FilterOperator.EQUAL, "leaderboard");
+			 Query query = new Query("id");
 	        	query.addSort("total1", SortDirection.DESCENDING);
 	        	 List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(1));
-	        	System.out.println(total);
 	        	 if (!greetings.isEmpty()) {
 	        	   
 	        	        for (Entity greeting : greetings) {
@@ -80,6 +80,8 @@ public class SelectionImpl extends RemoteServiceServlet {
 		req.setAttribute("id", id); 
 		req.setAttribute("total", total); 
 		req.setAttribute("score", score); 
+		req.setAttribute("round", 2);
+		req.setAttribute("source", "selection");
 	
         try {
 			req.getRequestDispatcher("selectionscreen.jsp").forward(req, resp);
