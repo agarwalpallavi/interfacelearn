@@ -114,6 +114,7 @@ public class StartTest extends RemoteServiceServlet {
 				}
 				else
 				{
+					left+="<h4>Question "+nq +" of 7<br/></h4>";
 					left+=round2q[nq-1];
 					left+="<br/><br/><br/><input type=\"radio\" name=\"question\" value=\"a\"> a. " + round2a[nq-1]+"<br/>";
 					left+="<br/><br/><input type=\"radio\" name=\"question\" value=\"b\"> b. " + round2b[nq-1]+"<br/>";
@@ -130,7 +131,7 @@ public class StartTest extends RemoteServiceServlet {
 			        	query.addSort("total12", SortDirection.DESCENDING);
 			        	List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(100));
 			        
-			        	 right ="<table border=2 cellpadding=2px><tr><th>Score</th><th>Name</th></tr>";
+			        	 right ="<h3>Leaderboard:</h3><br/><table border=2 cellpadding=2px><tr><th>Score</th><th>Name</th></tr>";
 			        	 if (!greetings.isEmpty()) {
 			        	        for (Entity greeting : greetings) {
 			        	        	right+="<tr><td>"+greeting.getProperty("name")+"</td><td>"+greeting.getProperty("total12")+"</td></tr>";
@@ -141,7 +142,7 @@ public class StartTest extends RemoteServiceServlet {
 					{
 						//projected
 						right = "<h3>Your current score is:"+entity.getProperty("total12")+
-								"<br/>Your projected score at the end of 7 questions is:";
+								"<br/><br/><br/>Your projected score at the end of 7 questions is:";
 						
 						double p1 =totalToSave*100.0/(800+(nq-1)*80);
 						int p2 = (int) (1320*p1/100);
@@ -203,6 +204,7 @@ public class StartTest extends RemoteServiceServlet {
 					
 				
 					try {
+						req.setAttribute("score", entity.getProperty("score3"));
 						req.getRequestDispatcher("done.jsp").forward(req, resp);
 					} catch (ServletException e) {
 						// TODO Auto-generated catch block
@@ -211,6 +213,7 @@ public class StartTest extends RemoteServiceServlet {
 				}
 				else
 				{
+					left+="<h4>Question "+nq +" of 7<br/></h4>";
 					left+=round3q[nq-1];
 					left+="<br/><br/><br/><input type=\"radio\" name=\"question\" value=\"a\"> a. " + round3a[nq-1]+"<br/>";
 					left+="<br/><br/><input type=\"radio\" name=\"question\" value=\"b\"> b. " + round3b[nq-1]+"<br/>";
@@ -227,18 +230,18 @@ public class StartTest extends RemoteServiceServlet {
 			        	query.addSort("total", SortDirection.DESCENDING);
 			        	List<Entity> greetings = datastore.prepare(query).asList(FetchOptions.Builder.withLimit(100));
 			        
-			        	 right ="<table border=2 cellpadding=2px><tr><th>Score</th><th>Name</th></tr>";
+			        	 right ="<h3>Leaderboard:</h3><br/><table border=2 cellpadding=2px><tr><th>Score</th><th>Name</th></tr>";
 			        	 if (!greetings.isEmpty()) {
 			        	        for (Entity greeting : greetings) {
 			        	        	right+="<tr><td>"+greeting.getProperty("name")+"</td><td>"+greeting.getProperty("total")+"</td></tr>";
 			        	        }
 			        	    }
-					}
+					}	
 					else
 					{
 						//projected
 						right = "<h3>Your current score is:"+totalToSave+
-								"<br/>Your projected score at the end of 7 questions is:";
+								"<br/><br/><br/>Your projected score at the end of 7 questions is:";
 						
 						double p1 =totalToSave*100.0/(1360+(nq-1)*80);
 						int p2 = (int) (1920*p1/100);
@@ -251,6 +254,7 @@ public class StartTest extends RemoteServiceServlet {
 					req.setAttribute("right", right); 
 					//redirect to test2.jsp
 					try {
+						
 						req.getRequestDispatcher("test2.jsp").forward(req, resp);
 					} catch (ServletException e) {
 						// TODO Auto-generated catch block

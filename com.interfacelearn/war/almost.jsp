@@ -4,8 +4,9 @@
 </head>
 <body>
 <center>
-<h2> You answered ${score} out of 7 questions correctly</h2><br/>
-Almost done! Click to continue.
+<h2> You answered ${score} out of 7 questions correctly</h2><br/><br/>
+<img src="sokdi.jpg"/><br/><br/>
+<h3>Almost done! Click to continue.</h3>
 <form action="/starttest" method="get">
 <input type="hidden" name="selection" value=${selection}>
 <input type="hidden" name="id" value=${id}>
