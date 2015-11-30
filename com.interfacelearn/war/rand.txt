@@ -1,0 +1,12 @@
+public static String[] round2q = {"1. The memory address of the first element of an array is called :","2. When determining the efficiency of algorithm, the space factor is measured by :","3. Which of the following sorting algorithm is of divide-and-conquer type :","4. The time complexity of searching an element in binary search tree is :","5. Which data structure allows deleting data elements from front and inserting at rear in constant time :","6. The operation of processing each element in the list is known as :","7. When new data are to be inserted into a data structure, but there is no available space; this situation is usually called :"};
+public static String[] round2a = {"Floor address","Counting the maximum memory needed by the algorithm","Bubble sort","O(n)","Stacks","Sorting","Underflow"};
+public static String[] round2b = {"Foundation address","Counting the minimum memory needed by the algorithm","Insertion sort","O(logn)","Queues","Merging","Overflow"};
+public static String[] round2c = {"First address","Counting the average memory needed by the algorithm","Quick sort","O(n*n)","Binary Search Trees","Inserting","Housefull"};
+public static String[] round2d = {"Base address","Counting the maximum disk space needed by the algorithm","All of the above","O(n*logn)","None of the above","Traversing","Saturated"};
+public static String[] round2ans = {"d","a","c","b","b","d","b"};
+public static String[] round3q = {" 1. Two main measures for the efficiency of an algorithm are :","2. The complexity of linear search algorithm is :","3. Which of the following data structures are indexed structures?","4. The average case complexity of Quicksort algorithm is :","5. The in order traversal of tree will yield a sorted listing of elements of tree in :","6. Which data structure allows deleting data elements from front and inserting at front in constant time :","7. Finding the location of the element with a given value is :"};
+public static String[] round3a = {"Processor and memory","O(n)","Arrays","O(n)","Any sort of binary trees","Stacks","Traversal"};
+public static String[] round3b = {"Complexity and capacity","O(logn)","Linked Lists","O(logn)","Only binary search trees","Queues","Search"};
+public static String[] round3c = {"Time and space","O(n*n)","Both A and B","O(n*n)","Min heaps","Binary Search Trees","Sort"};
+public static String[] round3d = {"Data and space","O(n*logn)","Neither A nor B","O(n*logn)","None of the above","Linked Lists","None of the above"};
+public static String[] round3ans = {"c","a","a","d","b","a","b"};
