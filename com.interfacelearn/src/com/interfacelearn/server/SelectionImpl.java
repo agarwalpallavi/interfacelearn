@@ -50,6 +50,7 @@ public class SelectionImpl extends RemoteServiceServlet {
 			entity = datastore.get(k);
 			 entity.setProperty("score1", score);
 			 entity.setProperty("total1", total);
+			 entity.setProperty("total12", total);
 			 datastore.put(entity);
 			// Query query = new Query("id").addFilter("selection", Query.FilterOperator.EQUAL, "leaderboard");
 			 Query query = new Query("id");

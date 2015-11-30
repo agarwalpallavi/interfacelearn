@@ -14,7 +14,7 @@ Do you want to compete to be on the leaderboard?<br/><br/><br/>
 <input type="hidden" name="id" value=${id}>
 <input type="hidden" name="round" value=${round}>
 <input type="hidden" name="source" value=${source}>
-<input type="hidden" name="nextq" value="1">
+<input type="hidden" name="nq" value="1"><br/><br/>
   <input type="submit" value="Submit"/>
 </form>
 </center>
